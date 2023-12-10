@@ -1,0 +1,76 @@
+{
+  "prefix" : {
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "ex" : "http://example.org/1/",
+    "perf" : "http://example.com/performance/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "tool" : "http://example.com/tool/"
+  },
+  "bundle" : {
+    "ex:run2" : {
+      "prefix" : {
+        "xsd" : "http://www.w3.org/2001/XMLSchema#",
+        "prov" : "http://www.w3.org/ns/prov#"
+      },
+      "activity" : {
+        "ex:a2" : {
+          "prov:startTime" : "2011-11-17T10:00:00.000-02:00",
+          "prov:endTime" : "2011-11-17T17:00:00.000-02:00"
+        }
+      },
+      "wasAssociatedWith" : {
+        "_:n0" : {
+          "prov:activity" : "ex:a2",
+          "prov:agent" : "ex:Bob"
+        }
+      },
+      "@id" : "ex:run2"
+    },
+    "ex:run1" : {
+      "prefix" : {
+        "xsd" : "http://www.w3.org/2001/XMLSchema#",
+        "prov" : "http://www.w3.org/ns/prov#"
+      },
+      "activity" : {
+        "ex:a1" : {
+          "prov:startTime" : "2011-11-16T16:00:00.000-02:00",
+          "prov:endTime" : "2011-11-16T17:00:00.000-02:00"
+        }
+      },
+      "wasAssociatedWith" : {
+        "_:n1" : {
+          "prov:activity" : "ex:a1",
+          "prov:agent" : "ex:Bob"
+        }
+      },
+      "@id" : "ex:run1"
+    },
+    "tool:analysis01" : {
+      "prefix" : {
+        "xsd" : "http://www.w3.org/2001/XMLSchema#",
+        "prov" : "http://www.w3.org/ns/prov#"
+      },
+      "agent" : {
+        "tool:Bob-2011-11-16" : {
+          "perf:rating" : [ "good" ]
+        },
+        "tool:Bob-2011-11-17" : {
+          "perf:rating" : [ "bad" ]
+        }
+      },
+      "mentionOf" : {
+        "_:n2" : {
+          "prov:specificEntity" : "tool:Bob-2011-11-16",
+          "prov:generalEntity" : "ex:Bob",
+          "prov:bundle" : "ex:run1"
+        },
+        "_:n3" : {
+          "prov:specificEntity" : "tool:Bob-2011-11-17",
+          "prov:generalEntity" : "ex:Bob",
+          "prov:bundle" : "ex:run2"
+        }
+      },
+      "@id" : "tool:analysis01"
+    }
+  }
+}
