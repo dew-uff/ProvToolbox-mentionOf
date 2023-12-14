@@ -3,8 +3,7 @@
 Modified version of the [ProvToolbox](https://github.com/lucmoreau/ProvToolbox) library adding support to the Mention Of relation defined in the [Linking Across Provenance Bundles (PROV-LINKS)](https://www.w3.org/TR/prov-links/) group note, part of the PROV family of documents.
 
 Based on the 2.0.4 version.  
-Supported: json, jsonld, xml, provn, dot  
-Not supported: prov-template, turtle, trig, rdfxml  
+Artifacts: prov-jsonld, prov-jsonld-xml, prov-model, prov-nf.  
 
 ### Mention Of
 MentionOf is a ternary relation that denotes an entity e2 as a specialization of an entity e1 described in a bundle b.
