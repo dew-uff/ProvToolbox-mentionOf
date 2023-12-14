@@ -1,6 +1,6 @@
 # ProvToolbox-mentionOf
 
-Modified version of the [ProvToolbox](https://github.com/lucmoreau/ProvToolbox) library adding support to the Mention Of relation defined in the [Linking Across Provenance Bundles (PROV-LINKS)](https://www.w3.org/TR/prov-links/) group note, part of the PROV family of documents.
+Modified version of the [ProvToolbox](https://github.com/lucmoreau/ProvToolbox) java toolkit adding support to the Mention Of relation defined in the [Linking Across Provenance Bundles (PROV-LINKS)](https://www.w3.org/TR/prov-links/) group note, part of the PROV family of documents.
 
 Based on the 2.0.4 version.  
 Artifacts: prov-jsonld, prov-jsonld-xml, prov-model, prov-nf.  
@@ -33,3 +33,5 @@ endDocument
 
 ![MentionOf](src/main/resources/mention.jpeg)
 
+### Credits  
+ProvToolbox project page http://lucmoreau.github.io/ProvToolbox/
